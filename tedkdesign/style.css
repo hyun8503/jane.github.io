@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+  border: 1px red solid;
+}
+
+a {
+  text-decoration-line: none;
+  color: white;
+}
+
+a:hover {
+  color: burlywood;
+}
+
+/* header nav */
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  padding: 15px;
+}
+
+#header_logo {
+  height: 3em;
+  width: 15em;
+}
+
+#header_logo img {
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav_list {
+  height: 2em;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+/* main top */
+.section_top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+.top_text {
+  margin: 2em;
+  padding: 2em;
+}
+
+.top_text h1 {
+  padding-top: 1em;
+}
+
+.top_text p {
+  width: 30em;
+  padding-top: 1em;
+}
+.top_text button {
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 15em;
+  height: 5em;
+  margin-top: 2em;
+  background-color: transparent;
+  color: white;
+}
+
+.top_img img {
+  width: 40em;
+  height: 30em;
+  object-fit: cover;
+}
+
+/* main section */
+.section_main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10em;
+}
+
+.main_text {
+  margin: 3em;
+  text-align: center;
+}
+
+.main_text p {
+  margin-top: 1em;
+  width: 30em;
+}
+
+#main_items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.item {
+  width: calc(100% / 3);
+  padding: 5px;
+  height: 15em;
+  position: relative;
+}
+
+.img_wrap {
+  width: 100%;
+  height: 100%;
+}
+
+.item .img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  filter: brightness(80%);
+  border-radius: 5px;
+}
+
+.img_text_wrap {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  transform: translate(-10%, -10%);
+  color: white;
+}
+
+.img_sub_text {
+  opacity: 0.7;
+}
+
+.item .img:hover {
+  filter: brightness(30%);
+  opacity: 1;
+}
+
+footer {
+  text-align: center;
+  margin: 5em;
+}
+
+@media only screen and (max-width: 600px) {
+  .section_main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .item {
+    width: 100%;
+    padding: 5px;
+    height: 15em;
+    position: relative;
+  }
+}

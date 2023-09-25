@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <nav></nav>
+    </header>
+
+    <main>
+      <!-- 스크롤 내릴 때마다 화면 출력되게 만들기?? -->
+      <h1 class="portfolio">Portfolio</h1>
+      <section class="section_box1">
+        <div class="img"></div>
+        <div class="text">
+          <p class="title">Lending Page</p>
+          <p class="description">
+            HTML CSS JavaScript Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Vel unde esse rerum delectus illo. Officiis optio
+            officia consequuntur, neque unde velit tenetur! Praesentium,
+            excepturi suscipit eos perspiciatis sunt quaerat vitae!
+          </p>
+          <div class="button"><button class="button">GO</button></div>
+          <!-- 테이븧 -->
+          <div class="table">
+            <table>
+              <thead>
+                <tr>
+                  <th id="col1">Category</th>
+                  <th id="col2">Source (click!)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td headers="col1">
+                    <span class="category html">React</span>
+                  </td>
+                  <td headers="col2">
+                    <a href="https://github.com/" target="_blank"
+                      >Github Page</a
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="section_box2">
+        <div class="text">
+          <p class="title">Lending Page</p>
+          <p class="description">
+            HTML CSS JavaScript Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Vel unde esse rerum delectus illo. Officiis optio
+            officia consequuntur, neque unde velit tenetur! Praesentium,
+            excepturi suscipit eos perspiciatis sunt quaerat vitae!
+          </p>
+          <div class="button"><button class="button">GO</button></div>
+          <!-- 테이븧 -->
+          <div class="table">
+            <table>
+              <thead>
+                <tr>
+                  <th id="col1">Category</th>
+                  <th id="col2">Source (click!)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td headers="col1">
+                    <span class="category html">React</span>
+                  </td>
+                  <td headers="col2">
+                    <a href="https://github.com/" target="_blank"
+                      >Github Page</a
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="img"></div>
+      </section>
+
+      <section class="section_box1">
+        <div class="img"></div>
+        <div class="text">
+          <p class="title">Lending Page</p>
+          <p class="description">
+            HTML CSS JavaScript Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Vel unde esse rerum delectus illo. Officiis optio
+            officia consequuntur, neque unde velit tenetur! Praesentium,
+            excepturi suscipit eos perspiciatis sunt quaerat vitae!
+          </p>
+          <div class="button"><button class="button">GO</button></div>
+          <!-- 테이븧 -->
+          <div class="table">
+            <table>
+              <thead>
+                <tr>
+                  <th id="col1">Category</th>
+                  <th id="col2">Source (click!)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td headers="col1">
+                    <span class="category html">React</span>
+                  </td>
+                  <td headers="col2">
+                    <a href="https://github.com/" target="_blank"
+                      >Github Page</a
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>CONTACT</p>
+      <p>hyun8503@gmail.com</p>
+      <p>647-990-0841</p>
+      <p>GitHub account</p>
+    </footer>
+
+    <script>
+      const html = document.querySelector("html");
+      const btnTop = html.querySelector(".btn_top");
+
+      window.addEventListener("scroll", () => {
+        // 스크롤 노출설정
+        if (html.scrollTop > 1170) {
+          btnTop.style.visibility = "visible";
+        } else {
+          btnTop.style.visibility = "hidden";
+        }
+      });
+
+      btnTop.addEventListener("click", () => {
+        // 클릭시
+        window.scroll({
+          behavior: "smooth",
+          top: 0,
+        });
+      });
+    </script>
+  </body>
+</html>
