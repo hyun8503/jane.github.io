@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Courier New", Courier, monospace;
+  /* border: 1px solid red; */
 }
 
 a {
@@ -24,14 +25,18 @@ header {
 }
 
 #header_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 3em;
   width: 15em;
+  /* border: 1px solid red; */
 }
 
 #header_logo img {
-  object-fit: fill;
-  width: 100%;
-  height: 100%;
+  /* object-fit: fill; */
+  width: 30px;
+  height: 30px;
 }
 
 ul {
@@ -50,11 +55,76 @@ ul {
 .section_top {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+
   align-items: center;
   background-color: black;
   color: white;
 }
+
+/* modal chat */
+.modal_back {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(76, 76, 76, 0.7);
+}
+.modal_chat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  width: 30%;
+  height: 75%;
+}
+.modal_chat .modal_close {
+  border: 0;
+  background-color: transparent;
+  align-self: end;
+  margin: 20px;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.chat_title {
+  text-align: center;
+}
+.chat_box {
+  width: 80%;
+  height: 70%;
+  background-color: lightgoldenrodyellow;
+}
+
+.chat_button_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal_chat .button {
+  text-align: center;
+  margin: 0.5em;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: lightblue;
+  border: 1px solid red;
+}
+.visible {
+  visibility: visible;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
 .top_text {
   margin: 2em;
   padding: 2em;

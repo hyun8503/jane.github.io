@@ -8,19 +8,40 @@
   </head>
   <body>
     <header>
-      <div id="header_logo">
-        <img src="./images/logo.png" />
-      </div>
+      <div id="header_logo"><img src="./images/logo.png" />TEDKDESIGNS</div>
       <nav>
         <ul>
           <li class="nav_list"><a href="#">Home</a></li>
           <li class="nav_list"><a href="#">Cool Stuff</a></li>
-          <li class="nav_list"><a href="#">Let's chat</a></li>
+          <li class="nav_list"><a onclick="OpenModal()" href="#">Let's chat</a></li>
         </ul>
       </nav>
     </header>
     <main>
+              <!-- modal -->
+              <div class="modal_back hidden">
+                <div class="modal_chat hidden">
+          
+                  <button class="modal_close" onclick="CloseModal()">X</button>
+
+                  <h1 class="chat_title">LET'S CHAT</h1>
+                  <div class="chat_box"></div>
+                  <div class="chat_button_box">
+                    <button class="button" onclick="CloseModal()">button1</button>
+                    <button class="button" onclick="CloseModal()">button1</button>
+                    <button class="button" onclick="CloseModal()">button1</button>
+                    <button class="button" onclick="CloseModal()">button1</button>
+            
+                  </div>
+                 
+              
+                
+
+                </div>
+              </div>
       <section class="section_top">
+
+      <!-- text -->
         <div class="top_text">
           <h1>
             Creative<br />
@@ -31,9 +52,17 @@
             work. collaboration & experience. Interested in working on something
             awesome together?
           </p>
-          <button><a href="#">Let's chat</a></button>
+
+         
+      <button onclick="OpenModal()">
+            Let's chat</button>
+          </div>
+    
+      </div>
+      <!-- image -->
+        <div class="top_img">
+          <img src="./images/top_img.png" />
         </div>
-        <div class="top_img"><img src="./images/top_img.png" /></div>
       </section>
 
       <section class="section_main">

@@ -9,7 +9,49 @@ const image = [
   ["./images/img6.jpg", "Purgo", "BRANDING"],
   ["./images/img7.jpg", "Yevka Blog", "BRANDING"],
   ["./images/img8.jpg", "Unordinary Life", "BRANDING"],
+  ["./images/img3.jpg", "Timescale", "ICONS"],
+  ["./images/img4.jpg", "Appsmart", "ILLUSTRATION"],
+  ["./images/img5.jpg", "Jumpstart", "BRANDING"],
+  ["./images/img6.jpg", "Purgo", "BRANDING"],
+  ["./images/img7.jpg", "Yevka Blog", "BRANDING"],
+  ["./images/img3.jpg", "Timescale", "ICONS"],
+  ["./images/img4.jpg", "Appsmart", "ILLUSTRATION"],
+  ["./images/img5.jpg", "Jumpstart", "BRANDING"],
+  ["./images/img6.jpg", "Purgo", "BRANDING"],
+  ["./images/img7.jpg", "Yevka Blog", "BRANDING"],
+  ["./images/img3.jpg", "Timescale", "ICONS"],
+  ["./images/img4.jpg", "Appsmart", "ILLUSTRATION"],
+  ["./images/img5.jpg", "Jumpstart", "BRANDING"],
+  ["./images/img6.jpg", "Purgo", "BRANDING"],
+  ["./images/img7.jpg", "Yevka Blog", "BRANDING"],
+  ["./images/img3.jpg", "Timescale", "ICONS"],
+  ["./images/img4.jpg", "Appsmart", "ILLUSTRATION"],
+  ["./images/img5.jpg", "Jumpstart", "BRANDING"],
+  ["./images/img6.jpg", "Purgo", "BRANDING"],
+  ["./images/img7.jpg", "Yevka Blog", "BRANDING"],
+  ["./images/img3.jpg", "Timescale", "ICONS"],
+  ["./images/img4.jpg", "Appsmart", "ILLUSTRATION"],
+  ["./images/img5.jpg", "Jumpstart", "BRANDING"],
+  ["./images/img6.jpg", "Purgo", "BRANDING"],
+  ["./images/img7.jpg", "Yevka Blog", "BRANDING"],
+  ["./images/img3.jpg", "Timescale", "ICONS"],
+  ["./images/img4.jpg", "Appsmart", "ILLUSTRATION"],
+  ["./images/img5.jpg", "Jumpstart", "BRANDING"],
+  ["./images/img6.jpg", "Purgo", "BRANDING"],
+  ["./images/img7.jpg", "Yevka Blog", "BRANDING"],
+  ["./images/img3.jpg", "Timescale", "ICONS"],
+  ["./images/img4.jpg", "Appsmart", "ILLUSTRATION"],
+  ["./images/img5.jpg", "Jumpstart", "BRANDING"],
+  ["./images/img6.jpg", "Purgo", "BRANDING"],
+  ["./images/img7.jpg", "Yevka Blog", "BRANDING"],
+  ["./images/img3.jpg", "Timescale", "ICONS"],
+  ["./images/img4.jpg", "Appsmart", "ILLUSTRATION"],
+  ["./images/img5.jpg", "Jumpstart", "BRANDING"],
+  ["./images/img6.jpg", "Purgo", "BRANDING"],
+  ["./images/img7.jpg", "Yevka Blog", "BRANDING"],
 ];
+
+//read an array
 
 let arr = [];
 
@@ -26,6 +68,22 @@ for (let i = 0; i < image.length; i++) {
   arr.push(imageTag);
   let makeString = arr.join("");
   document.getElementById("main_items").innerHTML = makeString;
+}
 
-  console.log(makeString);
+// modal chat function
+let Modal = document.querySelector(".modal_chat");
+let ModalBack = document.querySelector(".modal_back");
+
+function CloseModal() {
+  Modal.classList.add("hidden");
+  ModalBack.classList.add("hidden");
+  Modal.classList.remove("visible");
+  ModalBack.classList.remove("visible");
+}
+
+function OpenModal() {
+  Modal.classList.remove("hidden");
+  ModalBack.classList.remove("hidden");
+  Modal.classList.add("visible");
+  ModalBack.classList.add("visible");
 }
