@@ -30,11 +30,9 @@ header {
   align-items: center;
   height: 3em;
   width: 15em;
-  /* border: 1px solid red; */
 }
 
 #header_logo img {
-  /* object-fit: fill; */
   width: 30px;
   height: 30px;
 }
@@ -217,7 +215,7 @@ ul {
 }
 
 /* practicing Grid */
-.grid_container {
+#grid_container {
   font-family: Arial, Helvetica, sans-serif;
   margin: auto;
   width: max(90%, 75rem);

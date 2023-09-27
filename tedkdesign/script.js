@@ -11,7 +11,45 @@ const image = [
   ["./images/img8.jpg", "Unordinary Life", "BRANDING"],
 ];
 
-//read an array
+const grid = [
+  [
+    "./images/portrait_photo.jpg",
+    "Daniel Clifford",
+    "Verified Graduated",
+    "I received a job off mid-course, and the subjects I learned were current, if not more so in the company I joined. I honestly feel I got every penny's worth.",
+    "Reiciendis ex alias eius architecto molestiae exercitationem suscipit ipsam facere. Id dicta nobis corporis, earum tempora blanditiis beatae? Tempore ducimus doloremque sequi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ex vitae quas sed totam perspiciatis, voluptatem mollitia nam optio. Esse a repudiandae magnam accusamus! Iure consectetur aliquid incidunt rerum autem!",
+  ],
+  [
+    "./images/portrait_photo.jpg",
+    "Jonathan Walters",
+    "Verified Graduated",
+    "The team was very supportive and kept me motivated",
+    "Reiciendis ex alias eius architecto molestiae exercitationem suscipit ipsam facere. Id dicta nobis corporis, earum tempora blanditiis beatae? Tempore ducimus doloremque sequi!",
+  ],
+  [
+    "./images/portrait_photo.jpg",
+    "Kira Whittle",
+    "Verified Graduated",
+    "I received a job off mid-course, and the subjects I learned were current, if not more so in the company I joined. I honestly feel I got every penny's worth.",
+    "Reiciendis ex alias eius architecto molestiae exercitationem suscipit ipsam facere. Id dicta nobis corporis, earum tempora blanditiis beatae? Tempore ducimus doloremque sequi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ex vitae quas sed totam perspiciatis, voluptatem mollitia nam optio. Esse a repudiandae magnam accusamus! Iure consectetur aliquid incidunt rerum autem!",
+  ],
+  [
+    "./images/portrait_photo.jpg",
+    "Jeanette Harmon",
+    "Verified Graduated",
+    "I received a job off mid-course.",
+    "Reiciendis ex alias eius architecto molestiae exercitationem suscipit ipsam facere. Id dicta nobis corporis, earum tempora blanditiis beatae? Tempore ducimus doloremque sequi! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  ],
+  [
+    "./images/portrait_photo.jpg",
+    "Daniel Clifford",
+    "Verified Graduated",
+    "I received a job off mid-course, and the subjects I learned were current, if not more so in the company I joined. I honestly feel I got every penny's worth.",
+    "Reiciendis ex alias eius architecto molestiae exercitationem suscipit ipsam facere. Id dicta nobis corporis, earum tempora blanditiis beatae? Tempore ducimus doloremque sequi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ex vitae quas sed totam perspiciatis, voluptatem mollitia nam optio. Esse a repudiandae magnam accusamus! Iure consectetur aliquid incidunt rerum autem!",
+  ],
+];
+
+//read images array
 
 let arr = [];
 
@@ -28,6 +66,30 @@ for (let i = 0; i < image.length; i++) {
   arr.push(imageTag);
   let makeString = arr.join("");
   document.getElementById("main_items").innerHTML = makeString;
+}
+
+//read grids array
+
+let gridArr = [];
+
+for (let i = 0; i < grid.length; i++) {
+  const gridTag =
+    '<div class="grid_item"><div class="pic_container"><img class="pic" src="' +
+    grid[i][0] +
+    '" alt="icon"><div class="name"><p class="pic_name">' +
+    grid[i][1] +
+    '</p><p class="pic_name_des">' +
+    grid[i][2] +
+    '</p></div></div><div class="grid_item_text"><h1 class="grid_title">' +
+    grid[i][3] +
+    '</h1><p class="grid_description">' +
+    grid[i][4] +
+    "</p></div></div>";
+  console.log(gridTag);
+
+  gridArr.push(gridTag);
+  let makeGridString = gridArr.join("");
+  document.getElementById("grid_container").innerHTML = makeGridString;
 }
 
 // modal chat function
