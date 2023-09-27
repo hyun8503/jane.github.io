@@ -59,9 +59,16 @@
   background-color: cornsilk;
 }
 
-@media (max-width: 45rem) {
+@media screen and (max-width: 45rem) {
+  header {
+    margin: 0;
+    /* width: 100%; */
+  }
+
   .section_box1,
   .section_box2 {
     flex-direction: column;
+    width: 90%;
+    margin: 0;
   }
 }
