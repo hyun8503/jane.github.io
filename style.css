@@ -19,7 +19,6 @@
 }
 
 .text {
-  /* margin: 10px; */
   padding: 30px;
 }
 
@@ -62,12 +61,16 @@
 @media screen and (max-width: 600px) {
   .section_box1,
   .section_box2 {
-    flex-direction: column;
+    display: block;
     width: 100%;
     margin: 0;
+    padding: 20px;
   }
   .description {
-    padding: 20px;
     width: 100%;
+  }
+
+  .text {
+    padding: 0px;
   }
 }
