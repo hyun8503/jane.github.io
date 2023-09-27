@@ -59,7 +59,7 @@
   background-color: cornsilk;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   .section_box1,
   .section_box2 {
     flex-direction: column;
