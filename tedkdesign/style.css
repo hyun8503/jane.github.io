@@ -96,18 +96,21 @@ ul {
 }
 
 .chat_title {
+  /* font-family: "Courier New", Courier, monospace; */
   text-align: center;
 }
+
 .chat_box {
   width: 80%;
   height: 70%;
   background-color: lightgoldenrodyellow;
+  margin: 10px 0;
 }
 
 .chat_button_box {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
 }
 
 .modal_chat .button {
@@ -139,6 +142,7 @@ ul {
   width: 30em;
   padding-top: 1em;
 }
+
 .top_text button {
   border: 1px solid white;
   border-radius: 5px;
@@ -340,7 +344,7 @@ footer {
   }
 
   .modal_chat {
-    width: 50%;
-    height: 50%;
+    width: 80%;
+    height: 60%;
   }
 }
