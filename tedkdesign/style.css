@@ -11,12 +11,14 @@ a {
   color: white;
 }
 
-a:hover {
+.nav_list a:hover {
   color: burlywood;
 }
 
 /* header nav */
 header {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   background-color: black;
@@ -51,6 +53,7 @@ ul {
 
 /* main top */
 .section_top {
+  padding-top: 50px;
   display: flex;
   flex-wrap: wrap;
 
@@ -182,6 +185,7 @@ ul {
   padding: 5px;
   height: 15em;
   position: relative;
+  z-index: -1000;
 }
 
 .img_wrap {
