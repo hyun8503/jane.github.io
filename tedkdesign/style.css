@@ -299,7 +299,7 @@ footer {
 @media screen and (max-width: 600px) {
   header {
     display: block;
-    position: absolute;
+    position: fixed;
     width: 100%;
   }
 
@@ -337,5 +337,10 @@ footer {
       "third_item"
       "fourth_item"
       "fifth_item";
+  }
+
+  .modal_chat {
+    width: 50%;
+    height: 50%;
   }
 }
