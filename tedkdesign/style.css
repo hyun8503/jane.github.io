@@ -306,7 +306,10 @@ footer {
     position: fixed;
     width: 100%;
   }
-
+  .modal_chat {
+    width: 50%;
+    height: 60%;
+  }
   .top_text,
   .top_text h1,
   .top_text p,
@@ -341,10 +344,5 @@ footer {
       "third_item"
       "fourth_item"
       "fifth_item";
-  }
-
-  .modal_chat {
-    width: 80%;
-    height: 60%;
   }
 }
