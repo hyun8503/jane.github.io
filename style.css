@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 .portfolio {
   margin-top: 100px;
   text-align: center;
@@ -23,8 +24,8 @@
 }
 
 .img img {
-  width: 650px;
-  height: 400px;
+  width: 100%;
+  object-fit: cover;
   border-radius: 10px;
   border: 2px black solid;
 }
@@ -56,4 +57,11 @@
   padding: 40px;
   text-align: center;
   background-color: cornsilk;
+}
+
+@media (max-width: 800px) {
+  .section_box1,
+  .section_box2 {
+    flex-direction: column;
+  }
 }
