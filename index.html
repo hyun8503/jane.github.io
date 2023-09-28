@@ -120,7 +120,7 @@
                     <span class="category html">React</span>
                   </td>
                   <td headers="col2">
-                    <a href="https://github.com/" target="_blank"
+                    <a href="https://github.com/hyun8503" target="_blank"
                       >Github Page</a
                     >
                   </td>
@@ -137,27 +137,5 @@
       <p>647-990-0841</p>
       <p>GitHub account</p>
     </footer>
-
-    <script>
-      const html = document.querySelector("html");
-      const btnTop = html.querySelector(".btn_top");
-
-      window.addEventListener("scroll", () => {
-        // 스크롤 노출설정
-        if (html.scrollTop > 1170) {
-          btnTop.style.visibility = "visible";
-        } else {
-          btnTop.style.visibility = "hidden";
-        }
-      });
-
-      btnTop.addEventListener("click", () => {
-        // 클릭시
-        window.scroll({
-          behavior: "smooth",
-          top: 0,
-        });
-      });
-    </script>
   </body>
 </html>

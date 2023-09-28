@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   /* font-family: "Courier New", Courier, monospace; */
-  /* border: 1px solid green; */
 }
 
 a {
@@ -24,6 +23,7 @@ header {
   background-color: black;
   color: white;
   padding: 15px;
+  z-index: 1000;
 }
 
 #header_logo {
@@ -86,6 +86,7 @@ ul {
   width: 30%;
   height: 75%;
 }
+
 .modal_chat .modal_close {
   border: 0;
   background-color: transparent;
@@ -189,7 +190,6 @@ ul {
   padding: 5px;
   height: 15em;
   position: relative;
-  z-index: -1000;
 }
 
 .img_wrap {
@@ -229,8 +229,6 @@ ul {
   width: max(90%, 75rem);
   gap: 1.5rem;
   display: grid;
-  /* grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr); */
   grid-template-areas:
     "first_item first_item second_item third_item"
     "fourth_item fifth_item fifth_item third_item";
@@ -323,18 +321,14 @@ footer {
     object-fit: contain;
   }
   .section_main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     margin: 0;
   }
 
   .item {
     width: 100%;
     padding: 5px;
-    height: 15em;
-    position: relative;
+    /* height: 15em; */
+    /* position: relative; */
   }
 
   #grid_container {
@@ -345,4 +339,119 @@ footer {
       "fourth_item"
       "fifth_item";
   }
+}
+
+/* table */
+
+.table_price {
+  padding: 5em 0 3em 0;
+}
+.table-body {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+table {
+  border-collapse: collapse;
+}
+thead th {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+tbody .table-data:nth-child(1) {
+  padding-right: 50px;
+  padding-left: 50px;
+  height: 200px;
+  width: 300px;
+  color: white;
+}
+
+tbody .table-data:nth-child(n + 3):nth-child(-n + 4) {
+  background-color: rgb(247, 243, 243);
+  width: 280px;
+  padding-left: 20px;
+}
+
+tbody .table-data:last-child {
+  background-color: rgb(247, 243, 243);
+  width: 200px;
+}
+
+tbody .row2 .check {
+  color: rgb(121, 227, 67);
+}
+
+tbody .row3 .check {
+  color: rgb(79, 204, 230);
+}
+
+tbody .row4 .check {
+  color: rgb(225, 143, 48);
+}
+
+.connect {
+  background-color: rgb(247, 243, 243);
+}
+
+.col1,
+.square1 {
+  background-color: rgb(121, 227, 67);
+}
+.col2,
+.square2 {
+  background-color: rgb(79, 204, 230);
+}
+.col3,
+.square3 {
+  background-color: rgb(225, 143, 48);
+}
+
+.tri1 {
+  border-left: 30px solid rgb(121, 227, 67);
+}
+.tri2 {
+  border-left: 30px solid rgb(79, 204, 230);
+}
+.tri3 {
+  border-left: 30px solid rgb(225, 143, 48);
+}
+
+.triangle {
+  margin: 0;
+  padding: 0;
+  width: 0px;
+  height: 0px;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+}
+
+.square {
+  padding: 10px;
+  border-radius: 5px;
+  margin: auto;
+  color: white;
+  border: 0;
+  outline: 0;
+}
+
+tbody td {
+  font-weight: bold;
+}
+
+.table-ul {
+  display: block;
+}
+
+tbody td .prices {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+tbody td .prices p {
+  font-size: xx-large;
 }

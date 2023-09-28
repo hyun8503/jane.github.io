@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body class="table-body">
+    <table>
+      <caption>table's title</caption>
+
+      <thead> <!-- table heading semantic tag -->
+      <tr class="row row1">
+        <th class="table-header">1</td>
+        <th class="table-header">2</td>
+        <th class="table-header">3</td>
+        <th colspan='2' class="table-header">4</td>
+        <!-- <th class="table-header">5</td> -->
+      </tr>
+    </thead>
+    <tfoot>   <!-- table footer semantic tag -->
+      <tr class="row table-footer">
+        <!-- <td class="table-data">1</td> -->
+        <td colspan=5 class="table-data">footer</td>
+        </tr>
+      </tfoot>
+    <tbody>   <!-- table body semantic tag -->
+      <tr class="row row2">
+        <td rowspan=2 class="table-data">1</td>
+        <td class="table-data">2</td>
+        <td class="table-data">3</td>
+        <td class="table-data">4</td>
+        <td class="table-data">5</td>
+      </tr>
+      <tr class="row row3">
+        <!-- <td class="table-data">1</td> -->
+        <td class="table-data">2</td>
+        <td class="table-data">3</td>
+        <td class="table-data">4</td>
+        <td class="table-data">5</td>
+      </tr>
+      <tr class="row row4">
+        <td class="table-data">1</td>
+        <td class="table-data">2</td>
+        <td class="table-data">3</td>
+        <td class="table-data">4</td>
+        <td class="table-data">5</td>
+      </tr>
+    </tbody>
+    </table>
+    <script src="./js/table.js"></script>
+  </body>
+</html>

@@ -1,7 +1,7 @@
 "use strict";
 
 const image = [
-  ["./images/img1.jpg", "Unordinary Space", "BRANDING"],
+  ["./images/img1.jpg", "Unordinary Space", "BRANDING", "./tables.html"],
   ["./images/img2.jpg", "DAMMN! You Look Good", "BRANDING"],
   ["./images/img3.jpg", "Timescale", "ICONS"],
   ["./images/img4.jpg", "Appsmart", "ILLUSTRATION"],
@@ -55,13 +55,15 @@ let arr = [];
 
 for (let i = 0; i < image.length; i++) {
   const imageTag =
-    '<div class="item"><div class="img_wrap"><img class="img" src="' +
+    '<div class="item"><div class="img_wrap"><a href="' +
+    image[i][3] +
+    '" target="_self"><img class="img" src="' +
     image[i][0] +
     '" alt="img" /></div><div class="img_text_wrap"><h1 class="img_text">' +
     image[i][1] +
     '</h1><p class="img_sub_text">' +
     image[i][2] +
-    " </p></div></div>";
+    " </p></a></div></div>";
 
   arr.push(imageTag);
   let makeString = arr.join("");
