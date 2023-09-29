@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   /* font-family: "Courier New", Courier, monospace; */
+  /* border: 1px red solid; */
 }
 
 a {
@@ -167,6 +168,13 @@ ul {
   justify-content: center;
   align-items: center;
   margin: 0 10em;
+}
+
+.flex,
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .main_text {
@@ -420,10 +428,6 @@ tbody .row4 .check {
 }
 
 .triangle {
-  margin: 0;
-  padding: 0;
-  width: 0px;
-  height: 0px;
   border-top: 50px solid transparent;
   border-bottom: 50px solid transparent;
 }
@@ -454,4 +458,40 @@ tbody td .prices {
 
 tbody td .prices p {
   font-size: xx-large;
+}
+
+.form_container {
+  /* width: 500px;
+  height: 500px;
+  background-color: antiquewhite; */
+  padding: 30px;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: antiquewhite;
+}
+.form_pic img {
+  width: 300px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.name,
+.message,
+.email {
+  margin: 20px;
+}
+.message {
+  display: flex;
+  flex-direction: column;
+}
+.button_for_submit {
+  text-align: center;
+}
+.thankyou_message {
+  padding: 30px;
 }
