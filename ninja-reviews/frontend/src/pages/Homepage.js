@@ -17,12 +17,12 @@ export default function Homepage() {
   return (
     <div>
       {content.map((review) => (
-        <div key={review.attributes.name} className="review-card">
+        <div key={review.id} className="review-card">
           <div className="rating">{review.attributes.rating}</div>
           <h2>{review.attributes.title}</h2>
           <small>coonsole list</small>
           <p>{review.attributes.body}</p>
-          <Link to={`/details/${review.attributes.name}`}>read more</Link>
+          <Link to={`/details/${review.id}`}>read more</Link>
         </div>
       ))}
     </div>
